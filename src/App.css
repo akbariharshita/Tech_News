@@ -1,38 +1,108 @@
-.App {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+
+ h1{
+  font-size: 3.2rem;
   text-align: center;
-}
+ }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+ .Heading {
+  margin: 20px 0;
+ }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.4rem;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  p{
+    margin: 2rem 0;
+    color: rgba(12, 7, 97, 0.5);
+    font-weight: 400;
+    font-size: 1.6rem;
+    display: inline-block;
   }
-  to {
-    transform: rotate(360deg);
+
+  span{
+    text-transform: capitalize;
+    font-weight: bold;
   }
-}
+
+  .card{
+    min-width: 20rem;
+    width: 40vw;
+    padding: 4rem;
+    background-color: #ffffff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 0.5rem;
+    color: #15133c;
+  }
+
+  .card-button{
+    width: 100%;
+  }
+
+  .card-button a {
+    color: #447eda;
+    font-weight: 400;
+    font-size: 1.6rem;
+  }
+
+  form {
+    display: grid;
+    place-items: center;
+    font-size: 15px;
+  }
+
+  input{
+    padding: 1rem;
+    min-width: 40rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+    border: none;
+    border-bottom: 0.2rem solid #15133c;
+    outline: none;
+    margin-top: 10px;
+  }
+
+  .pagination-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+    gap: 15px;
+  }
+
+  button{
+    padding: 0.8rem 2.2rem;
+    border: none;
+    font-size: 1.6rem;
+    background-color: #15133c;
+    color: #ffffff;
+    margin: 3rem;
+    cursor: pointer;
+    display: inline-block;
+  }
+
+  @media (max-width: 768px) {
+
+    html{
+      font-size: 56%;
+    }
+
+    .card{
+      width: 30rem;
+    }
+
+    input{
+      min-width: 25rem;
+    }
+  }
